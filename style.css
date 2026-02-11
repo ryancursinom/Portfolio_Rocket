@@ -1,0 +1,75 @@
+/* Reset básico pra evitar dor de cabeça */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #0f172a; /* azul bem escuro */
+    color: #e5e7eb;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #020617;
+    padding: 20px;
+    border-bottom: 2px solid #1e293b;
+}
+
+/* Título */
+header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* Menu */
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Links */
+#menu li a {
+    text-decoration: none;
+    color: #e5e7eb;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: #1e293b;
+    transition: all 0.3s ease;
+}
+
+/* Hover brabo */
+#menu li a:hover {
+    background-color: #38bdf8;
+    color: #020617;
+}
+
+/* Conteúdo principal */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px);
+    font-size: 1.2rem;
+    color: #94a3b8;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
