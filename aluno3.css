@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    top: 0;
+    padding: 0;
+    font-family: 'Roboto', serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: hsl(0, 0%, 95%);
+    --primary-color: hsl(27.857, 25%, 44%);
+    --secundary-color: hsl(22.5, 22%, 29%);
+    --terciary-color: hsl(211.765, 11%, 32%);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    height: 10vh;
+    width: 100vw;
+    color: var(--background-color);
+    background-color: #485059;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 3px 15px var(--terciary-color);
+    font-family: 'Playfair Display', serif;
+    position: fixed;
+    z-index: 1;
+}
+
+header>h1 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+header>nav>ul {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    list-style-type: none;
+    gap: 28px;
+}
+
+header a {
+    color: white;
+}
+
+.primary-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 2px 2px 10px hsl(0, 0%, 21%);
+}
+
+.primary-button:hover {
+    background-color: color-mix(in hsl, var(--primary-color) 90%, black 10%);
+}
+
+.primary-button:active {
+    transform: scale(0.95);
+}
+
+.secundary-button {
+    display: inline-block;
+    color: var(--background-color);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    text-transform: uppercase;
+}
+
+.secundary-button:not(#active):hover {
+    transform: scale(1.05);
+}
+
+#active {
+    font-size: 24px;
+    border-bottom: solid 2px var(--background-color);
+}
+
+main {
+    margin-top: 13vh;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.welcome {
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    gap: 64px;
+    margin: auto;
+    margin-top: 128px;
+}
+
+.welcome>h2 {
+    font-size: 64px;
+    font-family: 'Playfair Display';
+}
+
+.welcome>div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.welcome h5 {
+    font-size: 26px;
+}
+
+.welcome h6 {
+    font-size: 20px;
+}
+
+.welcome>p {
+    font-size: 30px;
+    color: var(--terciary-color);
+}
+
+.general-about-me {
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 128px;
+}
+
+.general-about-me>img {
+    width: 30vw;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(92, 92, 92);
+}
+
+.general-about-me>div {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    width: 300px;
+}
+
+.general-about-me ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 12px;
+}
+
+.general-about-me li{
+    font-size: 20px;
+}
+
+.general-about-me>div>h2 {
+    font-size: 28px;
+}
+
+.curiosities{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+    background-color: color-mix(in hsl, var(--background-color) 90%, black 10%);
+    box-shadow: 5px 5px 10px color-mix(in hsl, var(--background-color) 60%, black 40%);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.curiosities > div {
+    width: 50vw;
+    justify-content: center;
+    gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.curiosities > div > img {
+    width: 300px;
+}
+
+.curiosities > article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.curiosities > article > h2{
+    font-size: 32px;
+    text-align: left;
+}
+
+.curiosities> article > ol {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.curiosities li{
+    color: color-mix(in hsl, var(--terciary-color) 40%, black 60%);
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+li:hover{
+    cursor:default;
+}
+
+.visited-places{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+}
+
+.visited-places > div {
+    width: 50vw;
+    justify-content: center;
+    gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.visited-places > div > img {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.visited-places > article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.visited-places > article > h2{
+    font-size: 32px;
+    text-align: left;
+}
+
+.visited-places > article > ul {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.visited-places a, li{
+    color: var(--terciary-color);
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+.future-places {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+    margin-bottom: 64px;
+}
+
+.future-places > div {
+    width: 50vw;
+    justify-content: center;
+    gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.future-places > div > img {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.future-places > article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.future-places > article > h2{
+    font-size: 32px;
+    text-align: left;
+}
+
+.future-places > article > ol {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.future-places a, li{
+    color: var(--terciary-color);
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+section:not(.curiosities) li:hover, li:hover > a{
+    transform: scale(1.1);
+    color: black;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding: 16px;
+    background: linear-gradient(to bottom, var(--background-color), color-mix(in hsl, var(--terciary-color) 60%, white 40%));
+}
+
+footer > div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer p, h3{
+    font-family: 'Roboto';
+}
+
+@media(max-width: 1000px) {
+    .welcome {
+        margin-top: 64px;
+    }
+
+    .welcome>h2 {
+        font-size: 32px;
+    }
+
+    .welcome>div h5,
+    h6 {
+        font-size: 26px;
+    }
+
+    .welcome>p {
+        font-size: 28px;
+    }
+
+     .curiosities {
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+
+    .curiosities > article{
+        width: 70vw;
+    }
+
+    .curiosities>img {
+        width: 50vw;
+    }
+
+    .general-about-me {
+        gap: 64px;
+        text-align: center;
+    }
+
+    .general-about-me>img {
+        width: 50vw;
+    }
+
+    .visited-places, .future-places{
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+}
+
+@media(max-width: 550px) {
+    .welcome {
+        margin-top: 32px;
+    }
+
+    .welcome>h2 {
+        font-size: 24px;
+    }
+
+    .welcome>div h5,
+    h6 {
+        font-size: 22px;
+    }
+
+    .welcome>p {
+        font-size: 20px;
+    }
+
+    .curiosities>img {
+        width: 60vw;
+    }
+
+    .curiosities {
+        gap: 32px;
+        text-align: center;
+    }
+
+    .curiosities>div {
+        width: 80vw;
+    }
+
+    .general-about-me>img {
+        width: 60vw;
+    }
+
+    .general-about-me {
+        gap: 32px;
+        text-align: center;
+    }
+
+    .general-about-me>div {
+        width: 80vw;
+    }
+
+    .visited-places, .future-places{
+        gap: 32px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
