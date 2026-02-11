@@ -66,6 +66,14 @@ main {
     color: #94a3b8;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    place-items: center;
+    text-align: center;
+}
+
 /* Responsividade básica */
 @media (max-width: 600px) {
     #menu {
