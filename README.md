@@ -22,8 +22,6 @@ O principal objetivo deste projeto é:
 - Git  
 - GitHub  
 
-*(Adicione outras tecnologias se necessário)*
-
 ---
 
 ## 🚀 Como Executar o Projeto
