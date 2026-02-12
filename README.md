@@ -8,10 +8,21 @@ Este repositório contém os portfólios individuais dos integrantes do grupo, d
 
 O principal objetivo deste projeto é:
 
+- Trabalho de DEVOPS
 - Praticar o uso do Git e GitHub
 - Trabalhar com versionamento de código
 - Organizar projetos em equipe
 - Desenvolver e publicar portfólios individuais
+
+---
+
+## 👥 Integrantes
+
+- Ryan Cursino Moraes
+- Ana Clara Blefari Soares de Souza
+- Lorenzo Lima de Oliveira 
+- Caio Marcos Ambrósio Maciel
+- Aline Teodoro de Carvalho e Silva
 
 ---
 
